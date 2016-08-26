@@ -22,6 +22,15 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   end
 end
 
+# another way
+# def first_word_capitalized_and_ends_with_punctuation?(text)
+#   if text.match(/\b[A-Z][a-zA-Z]*[[:punct:]]\s/)
+#     true
+#   else
+#     false
+#  end
+# end
+
 def valid_phone_number?(phone)
   phone.match(/\b\W?\d{3}\W*\d{3}*\d{4}\b/)
 end
